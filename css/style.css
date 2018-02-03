@@ -50,7 +50,7 @@ body{
 	z-index: 999;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9)!important;
+    background-color: rgba(0, 0, 0, 0.8)!important;
     }
 /*.container{
 	outline:1px solid #fc0;
@@ -298,25 +298,23 @@ border: none;
 	margin-top: 25px;
 }
 .cBusiness h3{
-	text-align:center;
+	text-align: center;
 	font-family: 'Roboto', 'sans-serif';
-	font-size:28px;
-	font-weight:400;
+	font-size: 5rem;
+	font-weight: 400;
 }
-.cBusiness h4{
+.cBusiness span{
+	display: block;
 	margin-top: 16px;
 	text-align:center;
 	font-family: 'Roboto', 'sans-serif';
-	font-size:16px;
+	font-size: 2rem;
 	font-weight:300;
 }
 /**/
 .centPic{
-	//margin-left: 24px;
-	margin-top: 57px;
+	margin: 6rem 0;
 	text-align: center;
-	
-	margin-bottom: -89px;
 	z-index: 10;
 }
 .centPic img{

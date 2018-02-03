@@ -97,7 +97,7 @@
 			</div>
 		</div>
 	</div>
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-4 project">
 					<h3 id="counter">0</h3>
@@ -115,12 +115,12 @@
 					<p>Мы предоставляем грузовые перевозки всеми видами автомобильного транспорта. </p>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 cBusiness">
-					<h3>The Best Way to Create Business Site &ndash; Attractive One Page</h3>
-					<h4>Discover elegant solution for your online business fast, reliable, affordable.</h4>
+					<h3>Надежные грузоперевозки по всему миру автотранспортом</h3>
+					<span>Отправляем грузы в 62-х странах</span>
 				</div>
 			</div>
 		</div>
@@ -139,20 +139,20 @@
     	<div class="line2">
 			<div class="container">
 				<div class="row Fresh">
-					<div class="col-md-4 Des">
-						<i class="fa fa-heart"></i>
-						<h4>Fresh & Clean Design</h4>
-						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+					<div class="col-md-4 project">
+						<h3 id="counter">0</h3>
+						<h4>Страны</h4>
+						<p>Наша компения основана в 2002 году и специализируется в области межрународных грузовых перевозок автомобильным транспортом. </p>
 					</div>
-					<div class="col-md-4 Ver">
-						<i class="fa fa-cog"></i>
-						<h4>Very Flexible</h4>
-						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+					<div class="col-md-4 project">
+						<h3 id="counter1">0</h3>
+						<h4>Заказов</h4>
+						<p>В год для 115 наших постоянных клиентов.  </p>
 					</div>
-					<div class="col-md-4 Fully">
-						<i class="fa fa-tablet"></i>
-						<h4>Fully Responsive</h4>
-						<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+					<div class="col-md-4 project">
+						<h3 id="counter2">0</h3>
+						<h4>Километров позади</h4>
+						<p>Мы предоставляем грузовые перевозки всеми видами автомобильного транспорта. </p>
 					</div>		
 				</div>
 			</div>
@@ -844,17 +844,17 @@
         var $menu = $("#menuF");
             
         $(window).scroll(function(){
-            if ( $(this).scrollTop() > 500 && $menu.hasClass("header") ){
-                $menu.fadeOut('fast',function(){
+            if ( $(this).scrollTop() > 530 && $menu.hasClass("header") ){
+                $menu.fadeOut('10',function(){
                     $(this).removeClass("header")
                            .addClass("fixed transbg")
-                           .fadeIn('fast');
+                           .fadeIn('10');
                 });
             } else if($(this).scrollTop() <= 450 && $menu.hasClass("fixed")) {
                 $menu.fadeOut('fast',function(){
                     $(this).removeClass("fixed transbg")
                            .addClass("header")
-                           .fadeIn('fast');
+                           .fadeIn('10');
                 });
             }
         });
