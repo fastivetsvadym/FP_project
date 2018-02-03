@@ -41,54 +41,61 @@ body{
 	border-bottom: 150px solid white;
 	border-left: 3000px solid transparent;
 }
+.header{
+	height: 6rem;
+	transition-duration: 1s;
+	}
+.fixed {
+	transition-duration: 1s;
+	z-index: 999;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9)!important;
+    }
 /*.container{
 	outline:1px solid #fc0;
 }
 .row{
 	outline:1px solid #f00;
 }*/
+.navmenu {
+	height: 6rem;
+	position: relative;
+}
+.navmenu-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
 .logo{
-	margin-top: 60px;
-	font-family: 'Roboto', 'sans-serif';
-	font-size:30px;
-	font-weight:700;
-	text-transform:uppercase;
-	color:#fff;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: left;
 }
-.logo span{
-	color:#1fcdff;
-}
-.logo p{
-	letter-spacing: 0.5px;
-	margin-top: -10px;
-	font-family: 'Roboto', 'sans-serif';
-	font-size:12px;
-	font-weight:300;
-	text-transform:lowercase;
-}
-.logo a{
-	cursor:pointer;
-	color:#fff;
-	text-decoration:none;
+.logo img{
+	max-height: 5rem;
+    vertical-align: middle;
 }
 #menu a:active {
-color:#1fcdff;
+color: #1e733a;
 }
 #menu select {
 display: none;
 }
 
 #menu .active a {
-border:0;
-color:#1fcdff;
+border: 0;
+color: #1e733a;
 }
 #menu .active a:focus{
 	outline: none;
-border: none;
+	border: none;
+	color: #1e733a;
 }
 #menu .active a:active {
 	outline: none;
-border: none;;
+	border: none;
 }
 #menu .active a:link {
 	outline: none;
@@ -96,7 +103,7 @@ border: none;
 }
 #menu .active a:visited  {
 	outline: none;
-border: none;
+	border: none;
 }
 #menu li{
     -moz-osx-font-smoothing: grayscale;
@@ -117,18 +124,17 @@ border: none;
 	padding-right:0px;
 }
 #menu{
-	//margin-top: 33px;
-	margin-top: 74px;
 	float: right;
+		margin: auto 0;
 }
 #menu li a{
 	color:#fff;
 	text-decoration:none;
 }
 #menu li a:hover{
-	border:none;
-	outline:none;
-	color:#1fcdff;
+	border: none;
+	outline: none;
+	color: #1e733a;
 }
 .gallery {
 	height:500px;
@@ -138,7 +144,7 @@ border: none;
 	margin-top: 10px;
 }
 .camera_caption h2{
-	border-bottom:4px solid #1fcdff;
+	border-bottom: 4px solid #1e733a;
 	font-family: 'Open Sans', sans-serif;
 	font-size:100px;
 	font-weight:700;
@@ -2053,19 +2059,8 @@ margin-bottom: 35px !important;
 
 
 /*                                                                    */
-	.default{
-		transition-duration: 1s;
-	}
-    .fixed {
-		transition-duration: 1s;
-		/*text-align:center;*/
-		z-index:999;
-        position:fixed;
-        top: -65px; 
-        padding:20px 0;
-        width:100%;
-		background-color: #101010!important;
-    }
+
+
 
 /**/
 

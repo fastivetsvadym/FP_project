@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-		<title>Timber</title>
+		<title>Fortuna Plus - Зелёный свет для Ваших грузов!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -48,26 +48,26 @@
     
     <div id="home">
     	<div class="headerLine">
-	<div id="menuF" class="default">
+	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
 				<div class="logo col-md-4">
-					<div>
-						<a href="#">
-							<img src="images/logo.png">
-						</a>
+					<div class="logo">
+						<img src="images/logo1.png">
 					</div>
 				</div>
 				<div class="col-md-8">
-					<div class="navmenu"style="text-align: center;">
-						<ul id="menu">
-							<li class="active" ><a href="#home">Домой</a></li>
-							<li><a href="#about">О нас</a></li>
-							<li><a href="#project">Услуги</a></li>
-							<li><a href="#news">Новости</a></li>
-							<li class="last"><a href="#contact">Контакты</a></li>
-							<!--li><a href="#features">Features</a></li-->
-						</ul>
+					<div class="navmenu">
+						<div class="navmenu-child">
+							<ul id="menu">
+								<li class="active" ><a href="#home">Домой</a></li>
+								<li><a href="#about">О нас</a></li>
+								<li><a href="#project">Услуги</a></li>
+								<li><a href="#news">Новости</a></li>
+								<li class="last"><a href="#contact">Контакты</a></li>
+								<!--li><a href="#features">Features</a></li-->
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -844,16 +844,16 @@
         var $menu = $("#menuF");
             
         $(window).scroll(function(){
-            if ( $(this).scrollTop() > 200 && $menu.hasClass("default") ){
+            if ( $(this).scrollTop() > 500 && $menu.hasClass("header") ){
                 $menu.fadeOut('fast',function(){
-                    $(this).removeClass("default")
+                    $(this).removeClass("header")
                            .addClass("fixed transbg")
                            .fadeIn('fast');
                 });
-            } else if($(this).scrollTop() <= 170 && $menu.hasClass("fixed")) {
+            } else if($(this).scrollTop() <= 450 && $menu.hasClass("fixed")) {
                 $menu.fadeOut('fast',function(){
                     $(this).removeClass("fixed transbg")
-                           .addClass("default")
+                           .addClass("header")
                            .fadeIn('fast');
                 });
             }
