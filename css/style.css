@@ -568,6 +568,18 @@ border: none;
 	padding-right:0;
 }*/
 /**/
+.about1 img {
+	padding: 6rem 1.5rem 0 2rem;
+}
+.about2 img {
+	padding: 6rem 1.5rem  0 0;
+}
+.about3 img {
+	padding: 6rem 1.5rem 0 2rem;
+}
+.about4 img {
+	padding: 6rem 1.5rem 0 0.8rem;
+}
 .aboutUs {
 	margin-top: 32px;
 	text-align:center;
@@ -598,18 +610,17 @@ border: none;
 
 .pic1Ab{
 	float: right;
-	height: 20rem;
-	padding: 0 0 0 2rem;
+	height: 15rem;
 }
-.about1{
+.about1, .about3{
 	float: right;
 	text-align: right;
 }
 .pic2Ab{
 	float: left;
-	height: 20rem;
+	height: 15rem;
 }
-.about2{
+.about2, .about4{
 	float: left;
 	text-align: left;
 }
@@ -635,9 +646,7 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
-	/*background: url(../images/line3Bg.jpg) center center no-repeat;*/
-	/*background:#3f2d28;*/
+	background: url(../images/bgTopо-darken.png) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -681,6 +690,17 @@ border: none;
 	border-right: 3000px solid transparent;
 	//bottom: 489px;
 }
+.features-header {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Proxy Nova Bold', sans-serif;
+  margin: 10rem 0 12rem;
+}
+.features-block {
+  text-align: center;
+  outline: none;
+}
+
 .Ama{
 	margin-top: 201px;
 	margin-bottom: 133px;
