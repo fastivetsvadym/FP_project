@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery-1.8.3.min.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
@@ -47,7 +47,7 @@
     <!--home start-->
     
     <div id="home">
-    	<div class="headerLine">
+    	<div class="headerLine" data-vieo-bg="video/ocean">
 	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
@@ -279,15 +279,59 @@
         </div>
       	</div>
       </div>
-    </div>          
-    		
-
-		
-   
+    </div>
+        <!--contact start-->
+    
+    <div id="contact">
+    	<div class="line5">					
+			<div class="container">
+				<div class="row Ama">
+					<div class="col-md-12">
+					<h3>Остались вопросы? <br> Мы здесь, чтобы ответить на Ваши вопросы!</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-xs-12 forma">
+					<form>
+						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Ваше имя *'/>
+						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Ваш телефон *'/>
+						<input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Ваш E-mail'/>
+						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Сообщение *'></textarea>
+						<div class="cBtn col-xs-12">
+							<ul>
+								<li class="send"><a href="#"><i class="fa fa-share"></i>Отправить сообщение</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-xs-12 cont">
+					<ul>
+						<li><a href="#"><i class="fa fa-envelope"></i>E-mail</li></a>
+						<li><a href="#"><i class="fa fa-skype"></i>Skype</li></a>
+						<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</li></a>
+						<li><a href="#"><i class="fa fa-youtube-play"></i>YouTube</li></a>
+						<li><i class="fa fa-home"></i>Калиновая 43/7</li>
+						<li><i class="fa fa-phone"></i>
+							(0562) 35-28-90 <br> 
+							<span class="phone-number">(0562) 31-34-90</span> <br>
+							<span class="phone-number">(067) 63-415-56</span> <br>
+							<span class="phone-number">(067) 63-478-82</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="line6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0593416342863!2d35.06422568577631!3d48.51292710857811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d9588b8c08177b%3A0x785d7d36f1b8327f!2z0LLRg9C70LjRhtGPINCa0LDQu9C40L3QvtCy0LAsIDQzLCDQlNC90ZbQv9GA0L7MgSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1508661675381" width="100%" height="750" frameborder="0" style="border:0"></iframe>			
+		</div>          
 		
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
 	<script>
 			$(document).ready(function(){
 			$(".bhide").click(function(){
