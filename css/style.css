@@ -8,18 +8,16 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {outline: none !important;
 }
-html{
-	background:#fff;
-}
 body{
 	font-family: 'Roboto', 'sans-serif';
+		background:#fff;
 }
 .headerLine{
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
+	height: 65rem;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -141,7 +139,7 @@ border: none;
 }
 #camera_wrap_1{
 	margin-bottom:0 !important;
-	margin-top: 10px;
+	margin-top: 9rem;
 }
 .camera_caption h2{
 	border-bottom: 4px solid #1e733a;
@@ -694,12 +692,17 @@ border: none;
   text-align: center;
   font-size: 3rem;
   font-family: 'Proxy Nova Bold', sans-serif;
-  margin: 10rem 0 12rem;
+  margin: 10rem 0 10rem;
 }
 .features-block {
   text-align: center;
   outline: none;
 }
+.features-block h3 {
+	font-size: 2.2rem;
+	height: 5rem;
+}
+
 
 .Ama{
 	margin-top: 201px;
@@ -1187,6 +1190,7 @@ border: none;
 	border-radius:2px;
 	padding-top:10px;
 	padding-bottom:10px;
+	padding-left:10px;
 	border:0px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
@@ -1220,6 +1224,7 @@ textarea {
 	border-radius:2px;
 	padding-top:10px;
 	padding-bottom:10px;
+	padding-left:10px;
 	border:0px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;

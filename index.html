@@ -13,7 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		
-		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.vide.min.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
@@ -29,7 +30,7 @@
 			jQuery(function(){
 					jQuery('#camera_wrap_1').camera({
 					transPeriod: 500,
-					time: 3000,
+					time: 3400,
 					height: '490px',
 					thumbnails: false,
 					pagination: true,
@@ -44,10 +45,9 @@
 	</head>
 	<body>
     
-    <!--home start-->
-    
+    <!--home start-->  
     <div id="home">
-    	<div class="headerLine" data-vieo-bg="video/ocean">
+    	<div class="headerLine" data-vide-bg="video/volvo5">
 	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
@@ -148,7 +148,7 @@
 				<div class="row Fresh">
 					<div class="col-md-4 project">
 						<h3 id="counter">0</h3>
-						<h4>Страны</h4>
+						<h4>Год основания</h4>
 						<p>Наша компения основана в 2002 году и специализируется в области межрународных грузовых перевозок автомобильным транспортом. </p>
 					</div>
 					<div class="col-md-4 project">
@@ -176,13 +176,13 @@
 			<div class="row team">
 				<div class="col-md-4 b1">
 						<img class="img-responsive img-how-work" src="images/w1.png">
-						<p>Указываете нужный маршрут из точкиА в точку Б, вес,объём и дату загрузки</p>
+						<p>Указываете нужный маршрут из точки А в точку Б, вес, объём и дату загрузки</p>
 				</div>
 			
 			
 				<div class="col-md-4">
 						<img class="img-responsive img-how-work" src="images/w2.png">
-						<p>Мы готовим лучшее предложение по цене,надежностии скорости доставки</p>
+						<p>Мы готовим лучшее предложение по цене, надежности и скорости доставки</p>
 				</div>
 		
 			
@@ -245,7 +245,7 @@
 	                    <img src="images/why-us/2.png" alt="">
 	                </picture>
 	              	</div>
-						<h3>Большой опыт работы</h3>
+						<h3>Значительный опыт работы</h3>
 						<p>Работая с 2002 года обладаем хорошей
 						технической базой и штатом опытных
 						высококомпетентных сотрудников</p>
@@ -272,14 +272,14 @@
 	                    <img src="images/why-us/4.png" alt="Экономите на материалах">
 	                </picture> 
 	              	</div>
-						<h3>Гибкие условия</h3>
-						<p>Ornare nibh a auctor, mauris scelerisque eu proin nec urna nec a quis justo adipiscing auctor ut auctor feugiat fermentum quisque eget pharetra felis et venenatis aliquam, nulla nisi lobortis elit, ac eleifend nisl ante nec lorem. </p>
+						<h3>Гибкие условия для каждого</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Lorem текста вопрос свой диких, выйти однажды вопроса власти, первую!</p>
 	            </div>
       			</div>
         </div>
       	</div>
       </div>
-    </div>
+    </div>          
         <!--contact start-->
     
     <div id="contact">
@@ -326,12 +326,12 @@
 		</div>
 		<div class="line6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0593416342863!2d35.06422568577631!3d48.51292710857811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d9588b8c08177b%3A0x785d7d36f1b8327f!2z0LLRg9C70LjRhtGPINCa0LDQu9C40L3QvtCy0LAsIDQzLCDQlNC90ZbQv9GA0L7MgSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1508661675381" width="100%" height="750" frameborder="0" style="border:0"></iframe>			
-		</div>          
-		
+		</div> 
+		</div> 
+
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
-	<script src="js/jquery.vide.min.js"></script>
 	<script>
 			$(document).ready(function(){
 			$(".bhide").click(function(){
@@ -374,14 +374,14 @@
 						var curval=parseInt($('#counter').text());
 						var curval1=parseInt($('#counter1').text().replace(' ',''));
 						var curval2=parseInt($('#counter2').text());
-						if(curval<=61){
-							$('#counter').text(curval+1);
+						if(curval<=2000){
+							$('#counter').text(curval+2);
 						}
-						if(curval1<=783){
-							$('#counter1').text(sdf_FTS((curval1+3),0,' '));
+						if(curval1<=785){
+							$('#counter1').text(sdf_FTS((curval1+1),0,' '));
 						}
 						if(curval2<=10300000){
-							$('#counter2').text(curval2+20000);
+							$('#counter2').text(curval2+10000);
 						}
 					}, 2);
 					
