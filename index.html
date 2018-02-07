@@ -4,6 +4,8 @@
 		<title>Fortuna Plus - Зелёный свет для Ваших грузов!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
@@ -24,6 +26,9 @@
 		<script src="js/sorting.js" type="text/javascript"></script>
 		<script src="js/jquery.isotope.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
 		
 
 		<script>
@@ -47,7 +52,7 @@
     
     <!--home start-->  
     <div id="home">
-    	<div class="headerLine" data-vide-bg="video/volvo5">
+    	<div class="headerLine" data-vide-bg="video/volvo4">
 	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
@@ -281,13 +286,45 @@
       </div>
     </div>          
         <!--contact start-->
-    
+    <div class="line3">
+		<div class="container">
+			<div id="project1" ></div>
+				<div class="row Ama">
+					<div class="col-md-12">
+					<h3>Наши клиенты</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="our-clients">
+		<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="clients-slider-header">
+							<h2>C нами работают такие компании. <br> Присоединяйтесь к числу лучших!</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row clients-slider">
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/dds.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/stroy-komplekt.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/tarkett.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/topex.png"></div>	
+				</div>
+		</div>
+	</section>
+	
     <div id="contact">
     	<div class="line5">					
 			<div class="container">
 				<div class="row Ama">
 					<div class="col-md-12">
-					<h3>Остались вопросы? <br> Мы здесь, чтобы ответить на Ваши вопросы!</h3>
+					<h3>Остались вопросы? <br> Мы здесь, чтобы ответить на них!</h3>
 					</div>
 				</div>
 			</div>
@@ -327,11 +364,51 @@
 		<div class="line6">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.0593416342863!2d35.06422568577631!3d48.51292710857811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d9588b8c08177b%3A0x785d7d36f1b8327f!2z0LLRg9C70LjRhtGPINCa0LDQu9C40L3QvtCy0LAsIDQzLCDQlNC90ZbQv9GA0L7MgSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1508661675381" width="100%" height="750" frameborder="0" style="border:0"></iframe>			
 		</div> 
-		</div> 
+		</div>
+
 
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
+	<script>
+		  jQuery.noConflict();
+(function($){ 
+  $(document).ready(function(){
+  $('.clients-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    prevArrow: '<button class="prev arrow"></button>',
+    nextArrow: '<button class="next arrow"></button>',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+          responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        infinite: true,
+        slidesToShow: 2,
+        prevArrow: '<button class="prev arrow"></button>',
+        nextArrow: '<button class="next arrow"></button>',
+        slidesToScroll: 2,
+        
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        infinite: true,
+        slidesToShow: 1,
+        prevArrow: '<button class="prev arrow"></button>',
+        nextArrow: '<button class="next arrow"></button>',
+        slidesToScroll: 1
+      }
+    }
+    ]
+    });
+    });
+  })(jQuery);
+	</script>
 	<script>
 			$(document).ready(function(){
 			$(".bhide").click(function(){

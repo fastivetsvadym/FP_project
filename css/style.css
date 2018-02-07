@@ -976,6 +976,25 @@ border: none;
 	box-shadow: 0px 2px 0px 0px #000 ;
 }
 /**/
+.clients-slider-header {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.clients-block{
+	position: relative;
+	height: 10rem;
+}
+.clients-block img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.center-img {
+	text-align: center;
+}
 .line4{
 	position: relative;
 	width: 100%;
