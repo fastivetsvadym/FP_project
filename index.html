@@ -26,8 +26,6 @@
 		<script src="js/sorting.js" type="text/javascript"></script>
 		<script src="js/jquery.isotope.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 		
 
@@ -52,7 +50,7 @@
     
     <!--home start-->  
     <div id="home">
-    	<div class="headerLine" data-vide-bg="video/volvo4">
+    	<div class="headerLine" data-vide-bg="video/volvo5">
 	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
@@ -314,7 +312,15 @@
 					<div class="col-md-3 clients-block">
 						<img src="images/_logos/tarkett.png"></div>
 					<div class="col-md-3 clients-block">
-						<img src="images/_logos/topex.png"></div>	
+						<img src="images/_logos/topex.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/dds.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/stroy-komplekt.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/tarkett.png"></div>
+					<div class="col-md-3 clients-block">
+						<img src="images/_logos/topex.png"></div>		
 				</div>
 		</div>
 	</section>
@@ -371,43 +377,14 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
 	<script>
-		  jQuery.noConflict();
-(function($){ 
-  $(document).ready(function(){
-  $('.clients-slider').slick({
-    infinite: true,
-    slidesToShow: 4,
-    prevArrow: '<button class="prev arrow"></button>',
-    nextArrow: '<button class="next arrow"></button>',
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
-          responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        infinite: true,
-        slidesToShow: 2,
-        prevArrow: '<button class="prev arrow"></button>',
-        nextArrow: '<button class="next arrow"></button>',
-        slidesToScroll: 2,
-        
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        infinite: true,
-        slidesToShow: 1,
-        prevArrow: '<button class="prev arrow"></button>',
-        nextArrow: '<button class="next arrow"></button>',
-        slidesToScroll: 1
-      }
-    }
-    ]
-    });
-    });
-  })(jQuery);
+		$(document).ready(function(){
+			$('.clients-slider').slick({
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2200,
+			});
+		});
 	</script>
 	<script>
 			$(document).ready(function(){
