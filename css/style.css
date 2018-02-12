@@ -92,12 +92,119 @@ body{
 	font-family: 'Roboto', 'sans-serif';
 		background:#fff;
 }
+.popup-btn {
+	background-color: #278d49;
+	border-radius: 3px;
+	padding: 0.1rem 1.5rem;
+	cursor: pointer;
+}
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-form {
+	margin-top: 0;
+   padding: 3rem 4rem 4rem 4rem;
+   background-color: #fff;
+}
+.slick-dots li button{
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	color: green;
+	border: 0;
+	
+}
+.popup input {
+     display: block;
+     width: 100%;
+     height: 4rem;
+     border-radius: 5px;
+     outline: none;
+     border: none;
+     background-color: #f2f2f2;
+     padding-left: 1rem;
+     font-size: 600;
+     font-family: 'Akrobat regular';
+     margin-bottom: 1rem;
+     font-size: 1.8rem;
+    }
+.popup textarea {
+     border: none;
+     outline: none;
+     background-color: #f2f2f2;
+     padding-left: 1rem;
+     font-size: 1.8rem;
+     font-size: 600;
+     width: 100%;
+     font-family: 'Akrobat regular';
+     margin-bottom: 2rem;
+    }
+.popup .button {
+     position: relative;
+     left: -2px;
+     top: -2px;
+     border: none;
+     outline: none;
+     height: 4rem;
+     border-radius: 3px;
+     color: #fff;
+     font-family: 'Akrobat bold';
+	 background-color: #278d49;
+	 border-bottom: 2px solid #013b21;
+     transition: 0.5s;
+     font-size: 2rem;
+     padding: 0.2rem 1rem;
+     }
+.popup .button:active {
+      left: 2px;
+      top: 2px;
+    }
+.popup-content {
+	position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 40rem;
+   text-align: center;
+   background: #333;
+}
+.popup-close {
+   position: absolute;
+   left: 93%;
+   transform: translateY(-15%);
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: #fff;
+   font-size: 2.5rem;
+  }
+ .popup h4 {
+     text-transform: uppercase;
+     font-size: 2rem;
+     font-family: 'Akrobat bold';
+     color: #fff;
+    }
+ .popup-header {
+ 	background-color: #278d49;
+ 	margin: 0;
+ 	padding: 1rem 0;
+ }
 .headerLine{
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 	height: 65rem;
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -161,8 +268,8 @@ display: none;
 #menu li{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-	padding-left: 17px;
-	padding-right: 16px;
+	padding-left: 14px;
+	padding-right: 13px;
 	float:left;
     font-family: 'Akrobat bold';
 	font-size: 1.8rem;
@@ -249,6 +356,18 @@ display: none;
 	.about p{
 		text-align: justify;
 	}
+	.slicknav_menu:before {
+		background: url(../images/logo-sm.png);
+		margin: 0;
+		height: 2.9rem;
+		width: 30rem;
+		margin: 1rem 0 0 0.5rem;
+	}
+	.popup-btn{
+		margin-left: 0;
+		width: 14rem;
+		background-color: transparent;
+	}
 }
 @media screen and (max-width: 1229px){
 	.pic1Ab{
@@ -308,6 +427,9 @@ display: none;
 	.name {
 	width: 100% !important;
 }
+.phone {
+	width: 100% !important;
+}
 	.Email {
 	width: 100% !important;
 }	
@@ -325,6 +447,9 @@ display: none;
 	width: 100%;
 	top: 418px;
 	background: url(../images/sliderL.png) no-repeat;
+}
+.forma form .send-btn {
+	padding-left: 0;
 }
 /**/
 .project{
@@ -777,7 +902,7 @@ display: none;
 
 
 .Ama{
-	margin-top: 19rem;
+	margin-top: 23rem;
 	margin-bottom: 10rem;
 /*	margin-top: 241px;
 	margin-bottom: 94px;*/
@@ -785,7 +910,7 @@ display: none;
 
 @media screen and (min-device-width:1919px) {   
 	.Ama {
-		margin-top: 19rem;
+		margin-top: 23rem;
 		margin-bottom: 14rem;
 	}
 }
@@ -1307,11 +1432,11 @@ textarea:focus{
 	margin-right: 10px;
 	width:403px;
 }
-.Email{
+.phone{
 	margin-bottom:10px;
 	width:403px;
 }
-.Subject{
+.email{
 	margin-bottom:10px;
 	max-width: 816px;
 }
@@ -1399,6 +1524,33 @@ textarea:focus{
 .cont .fa{
 	color:#278d49;
 	padding-right:14px;
+}
+.cont .fab{
+	color:#278d49;
+	padding-right:14px;
+}
+.cont .fa-facebook {
+	margin-left: 1px;
+}
+.cont .fa-skype {
+	margin-left: 1px;
+}
+.cont .fa-youtube {
+	padding-right: 11px;
+}
+.cont .fa-map-marker {
+	padding-right: 14px;
+	margin-left: 2px;
+}
+.cont .fa-phone {
+	padding-right: 10px;
+}
+.cont .fa-envelope-open {
+	margin-left: 1px;
+}
+.cont .fa-at {
+	margin-left: 1px;
+	padding-right: 12px;
 }
 .cont a{
 	text-decoration:none;
