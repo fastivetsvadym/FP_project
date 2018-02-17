@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
 		<title>Fortuna Plus - Зелёный свет для Ваших грузов!</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="УСЛУГИ НАДЕЖНЫХ ГРУЗОПЕРЕВОЗОК ПО ВСЕМУ МИРУ АВТОТРАНСПОРТОМ">
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -15,38 +17,13 @@
 		<link rel="stylesheet" type="text/css" href="css/slicknav.css">
 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-		<script src="js/jquery.vide.min.js"></script>
-
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
 		<script type="text/javascript" src="js/camera.min.js"></script>
-		<script type="text/javascript" src="js/myscript.js"></script>
-		<script src="js/sorting.js" type="text/javascript"></script>
-		<script src="js/jquery.isotope.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/jquery.nav.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-		<script src="js/jquery.disable.text.select.js"></script>
+		<script type="text/javascript" src="js/text-v.js"></script>
+		<script type="text/javascript" src="js/vide-m.js"></script>
+		
 
-		<script>
-			jQuery(function(){
-					jQuery('#camera_wrap_1').camera({
-					transPeriod: 500,
-					time: 3400,
-					height: '490px',
-					thumbnails: false,
-					pagination: true,
-					playPause: false,
-					loader: false,
-					navigation: false,
-					hover: false
-				});
-			});
-		</script>
 		
 	</head>
 	<body>
@@ -58,7 +35,7 @@
 				<h4 class="popup-header">Оставьте свои контактные данные <br>для связи</h4>
 			</div>
             <div class="form popup-form">
-              <form action="php/mailer/smart.php" method="POST" class="main-form contact-form">
+              <form action="telegram.php" method="POST" class="contact-form">
                 <input class="main-form-info" type="text" placeholder='Ваше имя *' name="user_name" required>
                 <input class="main-form-info phone" type="text" placeholder='Ваш телефон *' name="user_phone" required>
                 <input class="main-form-info" type="email" placeholder='Ваш E-mail *' name="user_e_mail" required>
@@ -77,7 +54,7 @@
 	<div id="menuF" class="header">
 		<div class="container">
 			<div class="row">
-				<div class="logo col-md-4 col-sm-6">
+				<div class="logo col-md-4">
 					<div class="logo">
 						<a href="#home"><img src="images/logo-сut.png"></a>
 					</div>
@@ -86,7 +63,7 @@
 					<div class="navmenu">
 						<div class="navmenu-child">
 							<ul id="menu">
-								<li><a href="#home" class="disableSelection">Домой</a></li>
+								<li><a href="#home">Домой</a></li>
 								<li><a href="#about">О нас</a></li>
 								<li><a href="#clients">Наши клиенты</a></li>
 								<li><a href="#contact">Контакты</a></li>
@@ -105,17 +82,17 @@
 						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
 							<div data-thumb="" data-src="images/slides/blank.gif">
 								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2 class="disableSelection">Быстро.</h2>
+									<h2>Быстро.</h2>
 								</div>
 							</div>
 							<div data-thumb="" data-src="images/slides/blank.gif">
 								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2 class="disableSelection">Качественно.</h2>
+									<h2>Качественно.</h2>
 								</div>
 							</div>
 							<div data-thumb="" data-src="images/slides/blank.gif">
 								<div class="img-responsive camera_caption fadeFromBottom">
-									<h2 class="disableSelection">Надежно.</h2>
+									<h2>Надежно.</h2>
 								</div>
 							</div>
 						</div><!-- #camera_wrap_1 -->
@@ -126,8 +103,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 cBusiness">
-					<h3 class="disableSelection">Услуги надежных грузоперевозок по всему миру автотранспортом</h3>
-					<span class="disableSelection">Отправляем грузы в 62-х странах</span>
+					<h3>Услуги надежных грузоперевозок по всему миру автотранспортом</h3>
+					<span>Отправляем грузы в 62-х странах</span>
 				</div>
 			</div>
 		</div>
@@ -147,19 +124,19 @@
 			<div class="container">
 				<div class="row Fresh">
 					<div class="col-md-4 project">
-						<h3 id="counter" class="disableSelection">2002</h3>
-						<h4 class="disableSelection">Год основания</h4>
-						<p class="disableSelection">Наша компания основана в 2002 году и специализируется в области межрународных грузовых перевозок автомобильным транспортом. </p>
+						<h3 id="counter">2002</h3>
+						<h4>Год основания</h4>
+						<p>Наша компания основана в 2002 году и специализируется в области межрународных грузовых перевозок автомобильным транспортом. </p>
 					</div>
 					<div class="col-md-4 project">
-						<h3 id="counter1" class="disableSelection">786</h3>
-						<h4 class="disableSelection">Заказов</h4>
-						<p class="disableSelection">В год для 115 наших постоянных клиентов.  </p>
+						<h3 id="counter1">786</h3>
+						<h4>Заказов</h4>
+						<p>В год для 115 наших постоянных клиентов.  </p>
 					</div>
 					<div class="col-md-4 project">
-						<h3 id="counter2" class="disableSelection">10310000</h3>
-						<h4 class="disableSelection">Километров позади</h4>
-						<p class="disableSelection">Мы предоставляем грузовые перевозки всеми видами автомобильного транспорта. </p>
+						<h3 id="counter2">10310000</h3>
+						<h4>Километров позади</h4>
+						<p>Мы предоставляем грузовые перевозки всеми видами автомобильного транспорта. </p>
 					</div>		
 				</div>
 			</div>
@@ -168,24 +145,24 @@
 			<div class="row">
 				<div class="col-md-12 wwa">
 					<span name="about" ></span>
-					<h3 class="disableSelection">Как это работает?</h3>
+					<h3>Как это работает?</h3>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row team">
 				<div class="col-md-4 b1">
-					<img class="img-responsive img-how-work disableSelection" src="images/w1.png">
-					<p class="disableSelection">Указываете нужный маршрут из точки А в точку Б, вес, объём и дату загрузки</p>
+					<img class="img-responsive img-how-work" src="images/w1.png">
+					<p>Указываете нужный маршрут из точки А в точку Б, вес, объём и дату загрузки</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive img-how-work disableSelection" src="images/w2.png">
-					<p class="disableSelection">Мы готовим лучшее предложение по цене, надежности и скорости доставки</p>
+					<img class="img-responsive img-how-work" src="images/w2.png">
+					<p>Мы готовим лучшее предложение по цене, надежности и скорости доставки</p>
 				</div>
 
 				<div class="col-md-4 b3">
-						<img class="img-responsive img-how-work disableSelection" src="images/w3.png">
-						<p class="disableSelection">Вы получаете готовое предложение через 15 минут</p>
+						<img class="img-responsive img-how-work" src="images/w3.png">
+						<p>Вы получаете готовое предложение через 15 минут</p>
 				</div>
 			</div>
 		</div>
@@ -195,8 +172,8 @@
 				<div class="row Ama">
 					<div class="col-md-12">
 					<span name="projects" id="projectss"></span>
-					<h3 class="disableSelection">Почему мы?</h3>
-						<p class="disableSelection">К каждому клиенту у нас индивидуальный подход, для
+					<h3>Почему мы?</h3>
+						<p>К каждому клиенту у нас индивидуальный подход, для
 						стабильной и продуктивной работы клиенту выделяется
 						минимум два менеджера. Для клиентов подбираем
 						самых надежных и проверенных перевозчиков. Если
@@ -213,7 +190,7 @@
       <div class="container">
       	<div class="row">
       		<div class="col-md-12">
-      			<h2 class="features-header disableSelection">Преимущества работы с нами</h2>
+      			<h2 class="features-header">Преимущества работы с нами</h2>
       		</div>
       	</div>
       	<div class="row">
@@ -225,8 +202,8 @@
 	                    <img src="images/why-us/01.png" alt="">
 	                	</picture>
 			              </div>
-			                <h3 class="disableSelection">Большой выбор грузового транспорта</h3>
-							<p class="disableSelection">тент, автобус, контейнеровоз, открытая
+			                <h3>Большой выбор грузового транспорта</h3>
+							<p>тент, автобус, контейнеровоз, открытая
 							изотерм, бензовоз, контейнер-зерновоз, плитовоз,
 							бус, лесовоз, самосвал,
 							крытый реф., газовоз, меблевоз, скотовоз,
@@ -242,8 +219,8 @@
 	                    <img src="images/why-us/02.png" alt="">
 	                </picture>
 	              	</div>
-						<h3 class="disableSelection">Значительный опыт работы</h3>
-						<p class="disableSelection">Работая с 2002 года обладаем хорошей
+						<h3>Значительный опыт работы</h3>
+						<p>Работая с 2002 года обладаем хорошей
 						технической базой и штатом опытных
 						высококомпетентных сотрудников. За более, чем 15 лет работы мы выполнили более десятков тысяч перевозок.</p>
 	            </div>
@@ -255,8 +232,8 @@
 	                    <img src="images/why-us/03.png" alt="">
 	                </picture>
 	             	</div>
-						<h3 class="disableSelection">Использование современных технологий</h3>
-						<p class="disableSelection">Мы идём в ногу со временем, и используем последние технологические решения индустрии. <br>Специальное клиенто-
+						<h3>Использование современных технологий</h3>
+						<p>Мы идём в ногу со временем, и используем последние технологические решения индустрии. <br>Специальное клиенто-
 						ориентированное программное обеспечение -
 						для сопровождения грузов,
 						на базе облачных технологий Microsoft SharеPoint.</p>
@@ -269,8 +246,8 @@
 	                    <img src="images/why-us/04.png" alt="Экономите на материалах">
 	                </picture> 
 	              	</div>
-						<h3 class="h3-center disableSelection">Проверка перевозчика</h3>
-						<p class="disableSelection">Один из самых важных аспектов - это безопасность.<br>
+						<h3 class="h3-center">Проверка перевозчика</h3>
+						<p>Один из самых важных аспектов - это безопасность.<br>
 						Во избежании всех неипрятностей, мы досконально проверяем перевозчика и каждого водителя. <br>С помощью специализириваного программного обеспечения и баз данных, мы тщательно проверяем документы предприятия, документы водителя и документы на машину.</p>
 	            </div>
       			</div>
@@ -284,8 +261,8 @@
 			<div id="project1" ></div>
 				<div class="row Ama">
 					<div class="col-md-12">
-					<h3 class="disableSelection">Наши клиенты</h3>
-					<p class="disableSelection">C нами работают такие компании. Присоединяйтесь к числу лучших!</p>
+					<h3>Наши клиенты</h3>
+					<p>C нами работают такие компании. Присоединяйтесь к числу лучших!</p>
 				</div>
 			</div>
 		</div>
@@ -326,8 +303,8 @@
 			<div class="container">
 				<div class="row Ama">
 					<div class="col-md-12">
-					<h3 class="disableSelection">Остались вопросы?</h3>
-					<p class="disableSelection">Мы здесь, чтобы ответить на них!</p>
+					<h3>Остались вопросы?</h3>
+					<p>Мы здесь, чтобы ответить на них!</p>
 					</div>
 				</div>
 			</div>
@@ -335,20 +312,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-xs-12 forma">
-					<form action="php/mailer/smart.php" method="POST" class="contact-form">
+					<form action="telegram.php" method="POST" class="contact-form">
 						<input type="text" class="col-md-6 col-xs-12 name" name="user_name" required placeholder='Ваше имя *'>
 						<input type="text" class="col-md-6 col-xs-12 phone" name="user_phone" required placeholder='Ваш телефон *'>
 						<input type="email" class="col-md-12 col-xs-12 email" name="user_e_mail" required placeholder='Ваш E-mail'>
 						<textarea type="text" class="col-md-12 col-xs-12 Message" name="user_message" required placeholder='Сообщение *'></textarea>
-						<div class="col-md-12 send-btn">
-							<button type="submit">Отправить сообщение</button>
-						</div>
+						<button type="submit">Отправить сообщение</button>
 					</form>
 				</div>
 				<div class="col-md-3 col-xs-12 cont">
 					<ul>
-						<li><a href="https:/www.facebook.com/fortunaplus" target="_blank"><i class="fab fa-facebook disableSelection"></i>Facebook</li></a>
-						<li><a href="skype:fortunaplus?chat"><i class="fab fa-skype disableSelection"></i>Skype</li></a>
+						<li><a href="https:/www.facebook.com/fortunaplus" target="_blank"><i class="fab fa-facebook"></i>Facebook</li></a>
+						<li><a href="skype:fortunaplus?chat"><i class="fab fa-skype"></i>Skype</li></a>
 						<li><a href="https://www.youtube.com/channel/UCZg1ebeXt86SbizeUIB988A" target="_blank"><i class="fab fa-youtube"></i>YouTube</li></a>
 						<li><i class="fa fa-at"></i>office@fortunaplus.com.ua</li></a>
 						<li><i class="fa fa-envelope-open"></i>г.Днепр, 49024 ул.Ферганская, дом 7</li>
@@ -365,14 +340,14 @@
 			</div>
 		</div>
 		<div class="line6">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2720.5282669088624!2d35.06550447304994!3d48.51253703432024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40d9588c7363bd77%3A0x5bef9756eb1d8269!2sfortuna+plus!3m2!1d48.5135553!2d35.064305999999995!5e0!3m2!1sru!2sua!4v1518342544767" width="100%" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>		
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.026573398041!2d35.06211731566224!3d48.51355527925522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d9588c7363bd77%3A0x5bef9756eb1d8269!2sFortuna+Plyus+Tov!5e0!3m2!1sru!2sua!4v1518609247754" width="100%" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>		
 		</div> 
 		</div>
 		<div class="lineBlack">
 			<div class="container">
 				<div class="row downLine">
 					<div class="col-md-6 text-left copy">
-						<p class="disableSelection">Copyright &copy; 2018 FortunaPlus. Все права защищены.</p>
+						<p>Copyright &copy; 2018 FortunaPlus. Все права защищены.</p>
 					</div>
 					<div class="col-md-6 text-right dm">
 						<ul id="downMenu">
@@ -385,97 +360,16 @@
 				</div>
 			</div>
 		</div>
-
-
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
-	<script>
-		 $(function() {
-		$('.disableSelection').disableTextSelect(); // and enableTextSelect() to re-enable it again
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			$('.clients-slider').slick({
-			  slidesToShow: 4,
-			  slidesToScroll: 1,
-			  autoplay: true,
-			  autoplaySpeed: 2200,
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-  			$("a[href*=#]").on("click", function(e){
-    		var anchor = $(this);
-  			$('html, body').stop().animate({
-   			 scrollTop: $(anchor.attr('href')).offset().top
-    		}, 900);
-    		e.preventDefault();
-    	return false;
-    });
-	});
-	</script>
-	<script>
-		$(document).ready(function(){
-		$('.popup-btn').on('click', function(event) {
-    	event.preventDefault();
-    	$('.popup').fadeIn();
-    	});
-  		$('.popup-close').on('click', function(event) {
-   		event.preventDefault();
-  		$('.popup').fadeOut();
-    	});
-  		});
-	</script>
-	<script>
-	$(function($){
-   	$(".phone").mask("+38 (999) 99-99-999");
-	});
-	</script>
-	<script type="text/javascript">
-	jQuery(document).ready(function(){
-		jQuery('#menu').slicknav();
-		
-	});
-	</script>
-	<script type="text/javascript">
-    $(document).ready(function(){
-       
-        var $menu = $("#menuF");
-            
-        $(window).scroll(function(){
-            if ( $(this).scrollTop() > 450 && $menu.hasClass("header") ){
-                $menu.fadeOut('10',function(){
-                    $(this).removeClass("header")
-                           .addClass("fixed transbg")
-                           .fadeIn('10');
-                });
-            } else if($(this).scrollTop() <= 400 && $menu.hasClass("fixed")) {
-                $menu.fadeOut('fast',function(){
-                    $(this).removeClass("fixed transbg")
-                           .addClass("header")
-                           .fadeIn('10');
-                });
-            }
-        });
-	});
-	</script>
-	  <script>
-    $('.contact-form').submit(function(event) {
-      event.preventDefault();
-      $.ajax({
-        type: "POST",
-        url: "php/mailer/smart.php",
-        data: $(this).serialize()
-      }).done(function() {
-        $(this).find("input").val("");
-        alert("Сообщение успешно отправлено");
-        $("form").trigger("reset");
-      });
-      return false;
-    });
-  </script>
+	<script src="js/ajax.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/nav-m.js"></script>	
+	<script src="js/p-mask.js"></script>	
+	<script src="js/popup.js"></script>	
+	<script src="js/scroll.js"></script>	
+	<script src="js/slider.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>		
 	</body>
 </html>
